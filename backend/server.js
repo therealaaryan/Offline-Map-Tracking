@@ -4,6 +4,7 @@ const userRoutes = require('./routes/userRoutes');
 const mapRoutes = require('./routes/mapRoutes');
 const waypointRoutes = require('./routes/waypointRoutes');
 const authMiddleware = require('./middleware/authMiddleware');
+const mapProxyRoutes = require('./routes/mapProxyRoutes');
 require('dotenv').config();
 
 const app = express();
