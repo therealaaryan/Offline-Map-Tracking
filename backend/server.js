@@ -16,6 +16,7 @@ app.use(express.json());
 app.use('/api/users', userRoutes);
 app.use('/api/maps', authMiddleware, mapRoutes);
 app.use('/api/waypoints', authMiddleware, waypointRoutes);
+app.use('/api/map-proxy', mapProxyRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
