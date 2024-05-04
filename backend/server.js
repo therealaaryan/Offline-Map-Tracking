@@ -5,9 +5,12 @@ const mapRoutes = require('./routes/mapRoutes');
 const waypointRoutes = require('./routes/waypointRoutes');
 const authMiddleware = require('./middleware/authMiddleware');
 const mapProxyRoutes = require('./routes/mapProxyRoutes');
+const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
+
+app.use(cors());
 
 connectDB();
 
